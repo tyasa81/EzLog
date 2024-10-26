@@ -2,7 +2,7 @@
 
 namespace tyasa81\EzLoggable\Enums;
 
-enum StockHistoryTypeEnums: string
+enum LogTypeEnums: string
 {
     case CREATE = 'crt';
     case SET = 'set';
