@@ -1,0 +1,16 @@
+<?php
+
+namespace {{ namespace }};
+
+use tyasa81\EzLoggable\Contracts\EzLoggableInterface as EzLoggable;
+
+class {{ class }} implements EzLoggable
+{
+    /**
+     * Constructs EzLoggable class
+     */
+    public function __construct()
+    {
+        //
+    }
+}
