@@ -26,27 +26,27 @@ class EzLoggableServiceProvider extends ServiceProvider
         //     $this->loadViewsFrom(__DIR__.'/../resources/views', 'ezloggable');
 
         if ($this->app->runningInConsole()) {
-        //         $this->publishes([
-        //             __DIR__.'/../views' => base_path('resources/views/vendor/ezloggable'),
-        //         ], 'ezloggable-views');
-        //         $this->publishes([
-        //             __DIR__.'/../config/ezloggable.php' => config_path('ezloggable.php'),
-        //         ], 'ezloggable-config');
+            //         $this->publishes([
+            //             __DIR__.'/../views' => base_path('resources/views/vendor/ezloggable'),
+            //         ], 'ezloggable-views');
+            //         $this->publishes([
+            //             __DIR__.'/../config/ezloggable.php' => config_path('ezloggable.php'),
+            //         ], 'ezloggable-config');
 
-        //         // Publishing the views.
-        //         /*$this->publishes([
-        //             __DIR__.'/../resources/views' => resource_path('views/vendor/ezloggable'),
-        //         ], 'ezloggable-views');*/
+            //         // Publishing the views.
+            //         /*$this->publishes([
+            //             __DIR__.'/../resources/views' => resource_path('views/vendor/ezloggable'),
+            //         ], 'ezloggable-views');*/
 
-        //         // Publishing assets.
-        //         /*$this->publishes([
-        //             __DIR__.'/../resources/assets' => public_path('vendor/ezloggable'),
-        //         ], 'ezloggable-assets');*/
+            //         // Publishing assets.
+            //         /*$this->publishes([
+            //             __DIR__.'/../resources/assets' => public_path('vendor/ezloggable'),
+            //         ], 'ezloggable-assets');*/
 
-        //         // Publishing the translation files.
-        //         /*$this->publishes([
-        //             __DIR__.'/../resources/lang' => resource_path('lang/vendor/ezloggable'),
-        //         ], 'ezloggable-lang');*/
+            //         // Publishing the translation files.
+            //         /*$this->publishes([
+            //             __DIR__.'/../resources/lang' => resource_path('lang/vendor/ezloggable'),
+            //         ], 'ezloggable-lang');*/
 
             // Registering package commands.
             $this->commands([

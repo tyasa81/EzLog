@@ -12,7 +12,7 @@ use tyasa81\EzLoggable\Tests\TestCase;
 class EzLoggableTest extends TestCase
 {
     use DatabaseTransactions;
-    
+
     protected function getOriginal($response)
     {
         /** @var \Illuminate\Http\Response $baseResponse */
@@ -27,19 +27,19 @@ class EzLoggableTest extends TestCase
      */
     public function test_ezloggable_class_can_create_log(): void
     {
-        $loggable = new EzLoggable();
+        $loggable = new EzLoggable;
         $log = $loggable->log(
             user_id: 88,
-            loggable_type: "amet",
+            loggable_type: 'amet',
             loggable_id: 96,
-            acted_by_type: "aliquam",
+            acted_by_type: 'aliquam',
             acted_by_id: 5,
-            action: "quaerat",
-            column: "ut",
-            before: "unde",
-            after: "error",
+            action: 'quaerat',
+            column: 'ut',
+            before: 'unde',
+            after: 'error',
         );
-        
+
         // Convert timestamps to the same format for comparison
         $logArray = $log->toArray();
         $logArray['created_at'] = $log->created_at->format('Y-m-d H:i:s');
@@ -52,14 +52,14 @@ class EzLoggableTest extends TestCase
     {
         $log = EzLog::log(
             user_id: 88,
-            loggable_type: "amet",
+            loggable_type: 'amet',
             loggable_id: 96,
-            acted_by_type: "aliquam",
+            acted_by_type: 'aliquam',
             acted_by_id: 5,
-            action: "quaerat",
-            column: "ut",
-            before: "unde",
-            after: "error",
+            action: 'quaerat',
+            column: 'ut',
+            before: 'unde',
+            after: 'error',
         );
 
         $logArray = $log->toArray();

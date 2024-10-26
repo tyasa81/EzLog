@@ -11,22 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        if(!Schema::hasTable("logs")) {
+        if (! Schema::hasTable('logs')) {
             Schema::create('logs', function (Blueprint $table) {
                 $table->id();
-                $table->unsignedBigInteger("user_id");
-                $table->string("loggable_type");
-                $table->unsignedBigInteger("loggable_id");
-                $table->string("acted_by_type");
-                $table->unsignedBigInteger("acted_by_id");
-                $table->string("action");
-                $table->string("column");
-                $table->string("before")->nullable();
-                $table->string("after");
-                $table->string("description")->nullable();
+                $table->unsignedBigInteger('user_id');
+                $table->string('loggable_type');
+                $table->unsignedBigInteger('loggable_id');
+                $table->string('acted_by_type');
+                $table->unsignedBigInteger('acted_by_id');
+                $table->string('action');
+                $table->string('column');
+                $table->string('before')->nullable();
+                $table->string('after');
+                $table->string('description')->nullable();
                 $table->timestamps();
-    
-                $table->index(["loggable_type", "loggable_id", "user_id"], "loggable_user_index");
+
+                $table->index(['loggable_type', 'loggable_id', 'user_id'], 'loggable_user_index');
             });
         }
     }
@@ -39,4 +39,3 @@ return new class extends Migration
         Schema::dropIfExists('logs');
     }
 };
-

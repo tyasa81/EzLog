@@ -20,7 +20,7 @@ class LogRepository implements RepositoryInterface
         }
     }
 
-    public function create(int $user_id, string $loggable_type, int $loggable_id, string $acted_by_type, int $acted_by_id, string $action, string $column, string $before = "", string $after, string $description = null)
+    public function create(int $user_id, string $loggable_type, int $loggable_id, string $acted_by_type, int $acted_by_id, string $action, string $column, string $before, string $after, ?string $description = null)
     {
         return $this->model->create([
             'user_id' => $user_id,
