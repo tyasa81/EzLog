@@ -2,7 +2,7 @@
 
 namespace tyasa81\EzLoggable\Enums;
 
-enum LogTypeEnums: string
+enum LogActionEnums: string
 {
     case CREATE = 'crt';
     case SET = 'set';
