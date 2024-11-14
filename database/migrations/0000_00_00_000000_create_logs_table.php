@@ -22,7 +22,7 @@ return new class extends Migration
                 $table->string('action');
                 $table->string('column');
                 $table->string('before')->nullable();
-                $table->string('after');
+                $table->string('after')->nullable();
                 $table->string('description')->nullable();
                 $table->timestamps();
 

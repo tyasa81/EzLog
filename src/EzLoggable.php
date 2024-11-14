@@ -15,7 +15,7 @@ class EzLoggable
         $this->logRepository = new LogRepository($connection);
     }
 
-    public function log(int $user_id, Model|Authenticatable $loggable, Model|Authenticatable $acted_by, string $action, string $column, string $before, string $after, ?string $description = null)
+    public function log(int $user_id, Model|Authenticatable $loggable, Model|Authenticatable $acted_by, string $action, string $column, ?string $before = null, ?string $after = null, ?string $description = null)
     {
         return $this->logRepository->create($user_id, $loggable->getMorphClass(), $loggable->id, $acted_by->getMorphClass(), $acted_by->id, $action, $column, $before, $after, $description);
     }
