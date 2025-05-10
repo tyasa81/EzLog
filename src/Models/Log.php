@@ -17,7 +17,7 @@ class Log extends Model
         return $this->morphTo();
     }
 
-    public function trackable(): MorphTo
+    public function acted_by(): MorphTo
     {
         return $this->morphTo();
     }

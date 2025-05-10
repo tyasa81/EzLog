@@ -21,7 +21,7 @@ class EzLoggableServiceProvider extends ServiceProvider
         //     * Optional methods to load your package assets
         //     */
         //     // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'ezloggable');
-        //     $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
         //     $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         //     $this->loadViewsFrom(__DIR__.'/../resources/views', 'ezloggable');
 
