@@ -45,7 +45,7 @@ class LogServices
                 },
             ], orderBys: [
                 ['created_at', 'desc'],
-        ], perPage: 10));
+            ], perPage: 10));
 
         // print_r(DB::getQueryLog());
         // exit;
