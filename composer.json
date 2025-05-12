@@ -18,7 +18,9 @@
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^10.0||^11.0",
-        "tyasa81/dbrepositories": "^1.2"
+        "tyasa81/dbrepositories": "^1.2",
+        "tyasa81/ezresponse": "^1.0",
+        "tyasa81/ezuserlink": "dev-main"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
