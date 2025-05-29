@@ -20,7 +20,8 @@
         "illuminate/contracts": "^10.0||^11.0",
         "tyasa81/dbrepositories": "^1.2",
         "tyasa81/ezresponse": "^1.0",
-        "tyasa81/ezuserlink": "dev-main"
+        "tyasa81/ezuserlink": "dev-main",
+        "tyasa81/eztokendeposit": "dev-main"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -34,6 +35,16 @@
         "phpstan/phpstan-deprecation-rules": "^1.1",
         "phpstan/phpstan-phpunit": "^1.3"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:tyasa81/EzCrmClient.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:tyasa81/EzTokenDeposit.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "tyasa81\\EzLoggable\\": "src/",
